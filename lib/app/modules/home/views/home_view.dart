@@ -33,7 +33,7 @@ class HomeView extends GetView<HomeController> {
           ),
           const SizedBox(height: 20),
           InkWell(
-            onTap: (){},
+            onTap: () => Get.toNamed(Routes.LAST_READ),
             child: Ink(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),

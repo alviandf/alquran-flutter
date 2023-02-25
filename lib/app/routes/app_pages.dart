@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
 
+import 'package:alquran/app/modules/last_read/bindings/last_read_binding.dart';
+import 'package:alquran/app/modules/last_read/views/last_read_view.dart';
+
 import '../modules/detail_surah/bindings/detail_surah_binding.dart';
 import '../modules/detail_surah/views/detail_surah_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -36,6 +39,11 @@ class AppPages {
       name: _Paths.SEARCH,
       page: () => const SearchView(),
       binding: SearchBinding(),
+    ),
+    GetPage(
+      name: _Paths.LAST_READ,
+      page: () => LastReadView(),
+      binding: LastReadBinding(),
     ),
   ];
 }
