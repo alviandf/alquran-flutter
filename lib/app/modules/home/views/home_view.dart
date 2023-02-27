@@ -93,7 +93,39 @@ class HomeView extends GetView<HomeController> {
                 ],
               ),
             ),
-          )
+          ),
+          DefaultTabController(
+            length: 3,
+            child: TabBar(tabs: [
+              Tab(
+                child: Text(
+                  "Surah",
+                  style: TextStyle(
+                    color: appPurpleDark,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "Juz",
+                  style: TextStyle(
+                    color: appPurpleDark,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "Bookmark",
+                  style: TextStyle(
+                    color: appPurpleDark,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ]),
+          ),
         ]),
       ),
       // body: FutureBuilder<List<Surah>>(
