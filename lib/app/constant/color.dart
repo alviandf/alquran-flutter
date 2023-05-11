@@ -11,15 +11,31 @@ const appOrange = Color(0xFFE6704A);
 
 ThemeData themeLight = ThemeData(
     primaryColor: appPurple,
-    appBarTheme: AppBarTheme(backgroundColor: appPurple));
-
-ThemeData themeDark = ThemeData(
-    primaryColor: appPurpleLight2,
-    scaffoldBackgroundColor: appPurpleDark,
+    scaffoldBackgroundColor: appWhite,
     appBarTheme: AppBarTheme(
-      backgroundColor: appPurpleDark,
+      backgroundColor: appPurple,
     ),
     textTheme: TextTheme(
-      bodyText1: TextStyle(color: appWhite),
-      bodyText2: TextStyle(color: appWhite),
+      bodyText1: TextStyle(
+        color: appPurpleDark,
+      ),
+      bodyText2: TextStyle(
+        color: appPurpleDark,
+      ),
     ));
+
+ThemeData themeDark = ThemeData(
+  primaryColor: appPurpleLight2,
+  scaffoldBackgroundColor: appPurpleDark,
+  appBarTheme: AppBarTheme(
+    backgroundColor: appPurpleDark,
+  ),
+  textTheme: TextTheme(
+    bodyText1: TextStyle(
+      color: appWhite,
+    ),
+    bodyText2: TextStyle(
+      color: appWhite,
+    ),
+  ),
+);
