@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'app/constant/color.dart';
 import 'app/routes/app_pages.dart';
 
-
 void main() {
   runApp(
     GetMaterialApp(

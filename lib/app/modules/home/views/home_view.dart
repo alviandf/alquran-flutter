@@ -49,8 +49,8 @@ class HomeView extends GetView<HomeController> {
       child: Ink(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            gradient: const LinearGradient(
-                colors: [appPurpleLight1, appPurpleDark])),
+            gradient:
+                const LinearGradient(colors: [appPurpleLight1, appPurpleDark])),
         child: Stack(
           children: [
             Positioned(
@@ -169,7 +169,18 @@ class HomeView extends GetView<HomeController> {
                           });
                     },
                   ),
-                  Center(child: Text("Juz")),
+                  ListView.builder(
+                    itemCount: 30,
+                    itemBuilder: (context, index) {
+                      return ListTile(
+                        onTap: () {},
+                        leading: CircleAvatar(
+                          child: Text("${index + 1}"),
+                        ),
+                        title: Text("Juz ${index + 1}"),
+                      );
+                    },
+                  ),
                   Center(child: Text("Bookmark")),
                 ],
               ),
