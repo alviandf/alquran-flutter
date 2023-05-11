@@ -156,8 +156,18 @@ class HomeView extends GetView<HomeController> {
                                 Get.toNamed(Routes.DETAIL_SURAH,
                                     arguments: surah);
                               },
-                              leading: CircleAvatar(
-                                child: Text("${surah.number}"),
+                              leading: Container(
+                                width: 36,
+                                height: 36,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage("assets/images/shape.png"),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text("${surah.number}"),
+                                ),
                               ),
                               title: Text(surah.name?.transliteration?.id ??
                                   "Error..."),
@@ -174,8 +184,17 @@ class HomeView extends GetView<HomeController> {
                     itemBuilder: (context, index) {
                       return ListTile(
                         onTap: () {},
-                        leading: CircleAvatar(
-                          child: Text("${index + 1}"),
+                        leading: Container(
+                          width: 36,
+                          height: 36,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage("assets/images/shape.png"),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text("${index + 1}"),
+                          ),
                         ),
                         title: Text("Juz ${index + 1}"),
                       );
